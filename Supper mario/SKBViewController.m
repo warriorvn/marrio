@@ -7,13 +7,13 @@
 //
 
 #import "SKBViewController.h"
-#import "SKBMyScene.h"
+#import "SKBSplashScene.h"
 
 @implementation SKBViewController
 
-- (void)viewDidLoad
+- (void)viewWillLayoutSubviews
 {
-    [super viewDidLoad];
+    [super viewWillLayoutSubviews];
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
@@ -21,7 +21,7 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [SKBMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [SKBSplashScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.

@@ -16,7 +16,7 @@
 		99C843BE1A262FF50010297F /* SKBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C843BD1A262FF50010297F /* SKBAppDelegate.m */; };
 		99C843C11A262FF50010297F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C843BF1A262FF50010297F /* Main.storyboard */; };
 		99C843C41A262FF50010297F /* SKBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C843C31A262FF50010297F /* SKBViewController.m */; };
-		99C843C71A262FF50010297F /* SKBMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C843C61A262FF50010297F /* SKBMyScene.m */; };
+		99C843C71A262FF50010297F /* SKBSplashScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C843C61A262FF50010297F /* SKBSplashScene.m */; };
 		99C843C91A262FF50010297F /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C843C81A262FF50010297F /* Spaceship.png */; };
 		99C843CB1A262FF50010297F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C843CA1A262FF50010297F /* Images.xcassets */; };
 		99C843D21A262FF50010297F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C843D11A262FF50010297F /* XCTest.framework */; };
@@ -24,6 +24,8 @@
 		99C843D41A262FF50010297F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C843AF1A262FF50010297F /* UIKit.framework */; };
 		99C843DC1A262FF50010297F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99C843DA1A262FF50010297F /* InfoPlist.strings */; };
 		99C843DE1A262FF50010297F /* Supper_marioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C843DD1A262FF50010297F /* Supper_marioTests.m */; };
+		99C843E91A2637900010297F /* SewerSplash_480.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C843E71A2637900010297F /* SewerSplash_480.png */; };
+		99C843EA1A2637900010297F /* SewerSplash_568.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C843E81A2637900010297F /* SewerSplash_568.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +53,8 @@
 		99C843C01A262FF50010297F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99C843C21A262FF50010297F /* SKBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKBViewController.h; sourceTree = "<group>"; };
 		99C843C31A262FF50010297F /* SKBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBViewController.m; sourceTree = "<group>"; };
-		99C843C51A262FF50010297F /* SKBMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKBMyScene.h; sourceTree = "<group>"; };
-		99C843C61A262FF50010297F /* SKBMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBMyScene.m; sourceTree = "<group>"; };
+		99C843C51A262FF50010297F /* SKBSplashScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKBSplashScene.h; sourceTree = "<group>"; };
+		99C843C61A262FF50010297F /* SKBSplashScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBSplashScene.m; sourceTree = "<group>"; };
 		99C843C81A262FF50010297F /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		99C843CA1A262FF50010297F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		99C843D01A262FF50010297F /* Supper marioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Supper marioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +62,8 @@
 		99C843D91A262FF50010297F /* Supper marioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Supper marioTests-Info.plist"; sourceTree = "<group>"; };
 		99C843DB1A262FF50010297F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		99C843DD1A262FF50010297F /* Supper_marioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Supper_marioTests.m; sourceTree = "<group>"; };
+		99C843E71A2637900010297F /* SewerSplash_480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SewerSplash_480.png; sourceTree = "<group>"; };
+		99C843E81A2637900010297F /* SewerSplash_568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SewerSplash_568.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,13 +125,15 @@
 		99C843B31A262FF50010297F /* Supper mario */ = {
 			isa = PBXGroup;
 			children = (
+				99C843E71A2637900010297F /* SewerSplash_480.png */,
+				99C843E81A2637900010297F /* SewerSplash_568.png */,
 				99C843BC1A262FF50010297F /* SKBAppDelegate.h */,
 				99C843BD1A262FF50010297F /* SKBAppDelegate.m */,
 				99C843BF1A262FF50010297F /* Main.storyboard */,
 				99C843C21A262FF50010297F /* SKBViewController.h */,
 				99C843C31A262FF50010297F /* SKBViewController.m */,
-				99C843C51A262FF50010297F /* SKBMyScene.h */,
-				99C843C61A262FF50010297F /* SKBMyScene.m */,
+				99C843C51A262FF50010297F /* SKBSplashScene.h */,
+				99C843C61A262FF50010297F /* SKBSplashScene.m */,
 				99C843C81A262FF50010297F /* Spaceship.png */,
 				99C843CA1A262FF50010297F /* Images.xcassets */,
 				99C843B41A262FF50010297F /* Supporting Files */,
@@ -244,6 +250,8 @@
 				99C843B81A262FF50010297F /* InfoPlist.strings in Resources */,
 				99C843CB1A262FF50010297F /* Images.xcassets in Resources */,
 				99C843C91A262FF50010297F /* Spaceship.png in Resources */,
+				99C843EA1A2637900010297F /* SewerSplash_568.png in Resources */,
+				99C843E91A2637900010297F /* SewerSplash_480.png in Resources */,
 				99C843C11A262FF50010297F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +274,7 @@
 				99C843BA1A262FF50010297F /* main.m in Sources */,
 				99C843BE1A262FF50010297F /* SKBAppDelegate.m in Sources */,
 				99C843C41A262FF50010297F /* SKBViewController.m in Sources */,
-				99C843C71A262FF50010297F /* SKBMyScene.m in Sources */,
+				99C843C71A262FF50010297F /* SKBSplashScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
