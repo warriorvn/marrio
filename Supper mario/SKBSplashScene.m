@@ -12,6 +12,16 @@
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
+        self.backgroundColor=[SKColor blackColor];
+        NSString* fileName=@"";
+        if(self.frame.size.width==480)
+            fileName=@"SewerSplash_480";
+        else
+            fileName=@"SewerSplash_568";
+        SKSpriteNode *splash=[SKSpriteNode spriteNodeWithImageNamed:fileName];
+        splash.name=@"splashNode";
+        splash.position=CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+        [self addChild:splash];
     }
     return self;
 }
