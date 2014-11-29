@@ -7,7 +7,7 @@
 //
 
 #import "SKBSplashScene.h"
-
+#import "SKBGameScene.h"
 @implementation SKBSplashScene
 
 -(id)initWithSize:(CGSize)size {    
@@ -30,6 +30,21 @@
     /* Called when a touch begins */
     
     for (UITouch *touch in touches) {
+        SKNode* node=[self childNodeWithName:@"splashNode"];
+        if(node!=nil)
+        {
+            node.name=nil;
+            
+            SKAction *zoom=[SKAction scaleTo:4.0 duration:1];
+            SKAction *fadeAway=[SKAction fadeOutWithDuration:1];
+            SKAction *grouped=[SKAction group:@[zoom,fadeAway]];
+                               
+            [node runAction:grouped completion:^{
+                SKBGameScene *nextScene=[[SKBGameScene alloc] initWithSize:self.size];
+                SKTransition *doors=[SKTransition doorwayWithDuration:0.5];
+                [self.view presentScene:nextScene transition:doors];
+            }];
+        }
         
     }
 }
